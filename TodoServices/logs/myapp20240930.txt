@@ -1074,3 +1074,444 @@ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport 
 2024-09-30 15:46:32.468 +05:30 [DBG] Connection id "0HN71729T97C6" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-09-30 15:46:32.468 +05:30 [DBG] The connection queue processing loop for 0HN71729T97C6 completed.
 2024-09-30 15:46:32.475 +05:30 [DBG] Connection id "0HN71729T97C6" stopped.
+2024-09-30 18:22:12.915 +05:30 [DBG] Initializing Razor view compiler with no compiled views.
+2024-09-30 18:22:13.065 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-30 18:22:13.147 +05:30 [DBG] Hosting starting
+2024-09-30 18:22:13.316 +05:30 [INF] User profile is available. Using 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-30 18:22:13.342 +05:30 [DBG] Reading data from file 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys\key-aec24cd3-e015-4ae5-a751-eb3eb2f44985.xml'.
+2024-09-30 18:22:13.554 +05:30 [DBG] Found key {aec24cd3-e015-4ae5-a751-eb3eb2f44985}.
+2024-09-30 18:22:13.578 +05:30 [DBG] Considering key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} with expiration date 2024-12-29 10:13:48Z as default key.
+2024-09-30 18:22:13.584 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-30 18:22:13.586 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-30 18:22:13.588 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-30 18:22:13.607 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-30 18:22:13.610 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-30 18:22:13.612 +05:30 [DBG] Using key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} as the default key.
+2024-09-30 18:22:13.614 +05:30 [DBG] Key ring with default key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} was loaded during application startup.
+2024-09-30 18:22:13.733 +05:30 [INF] Now listening on: https://localhost:7225
+2024-09-30 18:22:13.734 +05:30 [INF] Now listening on: http://localhost:5150
+2024-09-30 18:22:13.736 +05:30 [DBG] Loaded hosting startup assembly TodoServices
+2024-09-30 18:22:13.738 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-30 18:22:13.739 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-30 18:22:13.740 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-30 18:22:13.740 +05:30 [INF] Hosting environment: Development
+2024-09-30 18:22:13.741 +05:30 [INF] Content root path: C:\Users\P10\source\repos\TodoServices\TodoServices
+2024-09-30 18:22:13.742 +05:30 [DBG] Hosting started
+2024-09-30 18:22:13.772 +05:30 [DBG] Connection id "0HN719QQDM5IU" accepted.
+2024-09-30 18:22:13.775 +05:30 [DBG] Connection id "0HN719QQDM5IU" started.
+2024-09-30 18:22:13.798 +05:30 [DBG] Connection id "0HN719QQDM5IU" received FIN.
+2024-09-30 18:22:13.803 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-30 18:22:13.826 +05:30 [DBG] Connection id "0HN719QQDM5IU" stopped.
+2024-09-30 18:22:13.830 +05:30 [DBG] Connection id "0HN719QQDM5IU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-30 18:22:14.065 +05:30 [DBG] Connection id "0HN719QQDM5IV" accepted.
+2024-09-30 18:22:14.067 +05:30 [DBG] Connection id "0HN719QQDM5IV" started.
+2024-09-30 18:22:14.236 +05:30 [DBG] Connection 0HN719QQDM5IV established using the following protocol: "Tls12"
+2024-09-30 18:22:14.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/index.html - null null
+2024-09-30 18:22:14.374 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-30 18:22:14.396 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-30 18:22:14.398 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:22:14.496 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-30 18:22:14.498 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-30 18:22:14.525 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-30 18:22:14.531 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-30 18:22:14.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/index.html - 200 null text/html;charset=utf-8 247.5036ms
+2024-09-30 18:22:14.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-30 18:22:14.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 17.0924ms
+2024-09-30 18:22:14.630 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_vs/browserLink - null null
+2024-09-30 18:22:14.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.0054ms
+2024-09-30 18:22:15.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - null null
+2024-09-30 18:22:15.128 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-30 18:22:15.129 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:22:15.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.5709ms
+2024-09-30 18:22:29.508 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7225/api/Labels/deletelabel?id=99 - null null
+2024-09-30 18:22:29.521 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Labels/deletelabel'
+2024-09-30 18:22:29.535 +05:30 [DBG] Endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)' with route pattern 'api/Labels/deletelabel' is valid for the request path '/api/Labels/deletelabel'
+2024-09-30 18:22:29.539 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:22:29.552 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:22:29.576 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:22:29.689 +05:30 [INF] Route matched with {action = "Delete", controller = "Labels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Delete(Int32) on controller TodoServices.Controllers.LabelsController (TodoServices).
+2024-09-30 18:22:29.695 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:22:29.703 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:22:29.706 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:22:29.708 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:22:29.710 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:22:29.716 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:22:30.512 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-30 18:22:30.585 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:22:30.647 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-09-30 18:22:30.654 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-09-30 18:22:30.687 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-09-30 18:22:30.691 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-09-30 18:22:30.695 +05:30 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-09-30 18:22:30.712 +05:30 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-09-30 18:22:34.033 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:22:34.037 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:22:34.039 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-09-30 18:22:34.045 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-09-30 18:22:34.046 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-09-30 18:22:34.398 +05:30 [INF] Executed action TodoServices.Controllers.LabelsController.Delete (TodoServices) in 4681.0428ms
+2024-09-30 18:22:34.400 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:22:34.404 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7225/api/Labels/deletelabel?id=99 - 404 162 application/problem+json; charset=utf-8 4895.8697ms
+2024-09-30 18:23:27.131 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7225/api/Labels/unassignlabel?taskid=99&labelid=99 - null 0
+2024-09-30 18:23:27.143 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Labels/unassignlabel'
+2024-09-30 18:23:27.146 +05:30 [DBG] Endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)' with route pattern 'api/Labels/unassignlabel' is valid for the request path '/api/Labels/unassignlabel'
+2024-09-30 18:23:27.148 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:23:27.151 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:23:27.154 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:23:27.162 +05:30 [INF] Route matched with {action = "Delete", controller = "Labels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Delete(Int32, Int32) on controller TodoServices.Controllers.LabelsController (TodoServices).
+2024-09-30 18:23:27.165 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:23:27.167 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:23:27.169 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:23:27.170 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:23:27.183 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:23:27.185 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:23:27.199 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:23:27.201 +05:30 [DBG] Attempting to bind parameter 'taskid' of type 'System.Int32' ...
+2024-09-30 18:23:27.203 +05:30 [DBG] Attempting to bind parameter 'taskid' of type 'System.Int32' using the name 'taskid' in request data ...
+2024-09-30 18:23:27.204 +05:30 [DBG] Done attempting to bind parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:23:27.205 +05:30 [DBG] Done attempting to bind parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:23:27.206 +05:30 [DBG] Attempting to validate the bound parameter 'taskid' of type 'System.Int32' ...
+2024-09-30 18:23:27.208 +05:30 [DBG] Done attempting to validate the bound parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:23:27.209 +05:30 [DBG] Attempting to bind parameter 'labelid' of type 'System.Int32' ...
+2024-09-30 18:23:27.211 +05:30 [DBG] Attempting to bind parameter 'labelid' of type 'System.Int32' using the name 'labelid' in request data ...
+2024-09-30 18:23:27.213 +05:30 [DBG] Done attempting to bind parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:23:27.215 +05:30 [DBG] Done attempting to bind parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:23:27.216 +05:30 [DBG] Attempting to validate the bound parameter 'labelid' of type 'System.Int32' ...
+2024-09-30 18:23:27.217 +05:30 [DBG] Done attempting to validate the bound parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:23:27.330 +05:30 [DBG] The index {'TaskId'} was not created on entity type 'TaskLabel' as the properties are already covered by the index {'TaskId', 'LabelId'}.
+2024-09-30 18:23:27.367 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-30 18:23:27.378 +05:30 [DBG] Compiling query expression: 
+'DbSet<TaskLabel>()
+    .FirstOrDefault(row => row.LabelId == __labelid_0 && row.TaskId == __taskid_1)'
+2024-09-30 18:23:27.396 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TaskLabel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TaskLabel.TaskLabelIndex (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TaskLabel.LabelId (int?) FK Index, 1], [Property: TaskLabel.TaskId (int) Required FK Index, 2] }
+        SELECT TOP(1) t.TaskLabelIndex, t.LabelID, t.TaskID
+        FROM todoschema.TaskLabels AS t
+        WHERE (t.LabelID == @__labelid_0) && (t.TaskID == @__taskid_1)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TaskLabel>, 
+    TodoServices.Models.TodoContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2024-09-30 18:23:27.405 +05:30 [DBG] Creating DbConnection.
+2024-09-30 18:23:27.411 +05:30 [DBG] Created DbConnection. (1ms).
+2024-09-30 18:23:27.413 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-09-30 18:23:27.415 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-09-30 18:23:27.416 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-30 18:23:27.420 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-09-30 18:23:27.422 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2024-09-30 18:23:27.431 +05:30 [DBG] Executing DbCommand [Parameters=[@__labelid_0='?' (DbType = Int32), @__taskid_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TaskLabelIndex], [t].[LabelID], [t].[TaskID]
+FROM [todoschema].[TaskLabels] AS [t]
+WHERE [t].[LabelID] = @__labelid_0 AND [t].[TaskID] = @__taskid_1
+2024-09-30 18:23:27.479 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@__labelid_0='?' (DbType = Int32), @__taskid_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TaskLabelIndex], [t].[LabelID], [t].[TaskID]
+FROM [todoschema].[TaskLabels] AS [t]
+WHERE [t].[LabelID] = @__labelid_0 AND [t].[TaskID] = @__taskid_1
+2024-09-30 18:23:27.483 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-09-30 18:23:27.487 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 1ms reading results.
+2024-09-30 18:23:27.489 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-09-30 18:23:27.491 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (1ms).
+2024-09-30 18:23:27.494 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:23:27.498 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:23:27.499 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-30 18:23:27.499 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-30 18:23:27.500 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-09-30 18:23:27.502 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-30 18:23:27.504 +05:30 [INF] Executed action TodoServices.Controllers.LabelsController.Delete (TodoServices) in 318.6564ms
+2024-09-30 18:23:27.505 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:23:27.506 +05:30 [DBG] 'TodoContext' disposed.
+2024-09-30 18:23:27.521 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-09-30 18:23:27.524 +05:30 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-09-30 18:23:27.527 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7225/api/Labels/unassignlabel?taskid=99&labelid=99 - 404 null text/plain; charset=utf-8 395.5662ms
+2024-09-30 18:23:50.661 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/api/Labels/getlabellist - null null
+2024-09-30 18:23:50.667 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Labels/getlabellist'
+2024-09-30 18:23:50.668 +05:30 [DBG] Endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)' with route pattern 'api/Labels/getlabellist' is valid for the request path '/api/Labels/getlabellist'
+2024-09-30 18:23:50.671 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:23:50.672 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:23:50.673 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:23:50.677 +05:30 [INF] Route matched with {action = "Get", controller = "Labels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.LabelsController (TodoServices).
+2024-09-30 18:23:50.680 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:23:50.682 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:23:50.684 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:23:50.687 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:23:50.688 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:23:50.691 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:23:50.696 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:23:50.806 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:23:50.809 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:23:50.810 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-30 18:23:50.812 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-30 18:23:50.814 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-09-30 18:23:50.816 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.LabelList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-30 18:23:50.828 +05:30 [INF] Executed action TodoServices.Controllers.LabelsController.Get (TodoServices) in 137.1262ms
+2024-09-30 18:23:50.831 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:23:50.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/api/Labels/getlabellist - 200 292 application/json; charset=utf-8 171.3868ms
+2024-09-30 18:24:15.977 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/api/Task/gettasklist - null null
+2024-09-30 18:24:15.980 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Task/gettasklist'
+2024-09-30 18:24:15.982 +05:30 [DBG] Endpoint 'TodoServices.Controllers.TaskController.Get (TodoServices)' with route pattern 'api/Task/gettasklist' is valid for the request path '/api/Task/gettasklist'
+2024-09-30 18:24:15.988 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.TaskController.Get (TodoServices)'
+2024-09-30 18:24:15.993 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:24:15.998 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.TaskController.Get (TodoServices)'
+2024-09-30 18:24:16.013 +05:30 [INF] Route matched with {action = "Get", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.TaskController (TodoServices).
+2024-09-30 18:24:16.015 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:24:16.017 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:24:16.018 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:24:16.020 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:24:16.021 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:24:16.023 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.TaskController (TodoServices)
+2024-09-30 18:24:16.024 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.TaskController (TodoServices)
+2024-09-30 18:24:16.500 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:24:16.503 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:24:16.504 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-30 18:24:16.505 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-30 18:24:16.506 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-09-30 18:24:16.507 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.Task, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-30 18:24:16.540 +05:30 [INF] Executed action TodoServices.Controllers.TaskController.Get (TodoServices) in 517.4526ms
+2024-09-30 18:24:16.542 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.TaskController.Get (TodoServices)'
+2024-09-30 18:24:16.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/api/Task/gettasklist - 200 3688 application/json; charset=utf-8 566.5848ms
+2024-09-30 18:25:03.983 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7225/api/Labels/unassignlabel?taskid=19&labelid=1 - null 0
+2024-09-30 18:25:03.986 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Labels/unassignlabel'
+2024-09-30 18:25:03.988 +05:30 [DBG] Endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)' with route pattern 'api/Labels/unassignlabel' is valid for the request path '/api/Labels/unassignlabel'
+2024-09-30 18:25:03.990 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:25:03.992 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:25:03.993 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:25:03.994 +05:30 [INF] Route matched with {action = "Delete", controller = "Labels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Delete(Int32, Int32) on controller TodoServices.Controllers.LabelsController (TodoServices).
+2024-09-30 18:25:04.002 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:25:04.006 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:25:04.010 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:25:04.014 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:25:04.016 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:25:04.019 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:25:04.020 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:25:04.022 +05:30 [DBG] Attempting to bind parameter 'taskid' of type 'System.Int32' ...
+2024-09-30 18:25:04.024 +05:30 [DBG] Attempting to bind parameter 'taskid' of type 'System.Int32' using the name 'taskid' in request data ...
+2024-09-30 18:25:04.028 +05:30 [DBG] Done attempting to bind parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:25:04.029 +05:30 [DBG] Done attempting to bind parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:25:04.031 +05:30 [DBG] Attempting to validate the bound parameter 'taskid' of type 'System.Int32' ...
+2024-09-30 18:25:04.032 +05:30 [DBG] Done attempting to validate the bound parameter 'taskid' of type 'System.Int32'.
+2024-09-30 18:25:04.033 +05:30 [DBG] Attempting to bind parameter 'labelid' of type 'System.Int32' ...
+2024-09-30 18:25:04.034 +05:30 [DBG] Attempting to bind parameter 'labelid' of type 'System.Int32' using the name 'labelid' in request data ...
+2024-09-30 18:25:04.035 +05:30 [DBG] Done attempting to bind parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:25:04.037 +05:30 [DBG] Done attempting to bind parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:25:04.038 +05:30 [DBG] Attempting to validate the bound parameter 'labelid' of type 'System.Int32' ...
+2024-09-30 18:25:04.039 +05:30 [DBG] Done attempting to validate the bound parameter 'labelid' of type 'System.Int32'.
+2024-09-30 18:25:04.042 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-30 18:25:04.049 +05:30 [DBG] Creating DbConnection.
+2024-09-30 18:25:04.049 +05:30 [DBG] Created DbConnection. (0ms).
+2024-09-30 18:25:04.050 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.052 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.053 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-30 18:25:04.054 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-30 18:25:04.055 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-09-30 18:25:04.056 +05:30 [DBG] Executing DbCommand [Parameters=[@__labelid_0='?' (DbType = Int32), @__taskid_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TaskLabelIndex], [t].[LabelID], [t].[TaskID]
+FROM [todoschema].[TaskLabels] AS [t]
+WHERE [t].[LabelID] = @__labelid_0 AND [t].[TaskID] = @__taskid_1
+2024-09-30 18:25:04.077 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__labelid_0='?' (DbType = Int32), @__taskid_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TaskLabelIndex], [t].[LabelID], [t].[TaskID]
+FROM [todoschema].[TaskLabels] AS [t]
+WHERE [t].[LabelID] = @__labelid_0 AND [t].[TaskID] = @__taskid_1
+2024-09-30 18:25:04.082 +05:30 [DBG] Context 'TodoContext' started tracking 'TaskLabel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:25:04.089 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-09-30 18:25:04.090 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 10ms reading results.
+2024-09-30 18:25:04.092 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.094 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (1ms).
+2024-09-30 18:25:04.104 +05:30 [DBG] An entity of type 'TaskLabel' tracked by 'TodoContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:25:04.110 +05:30 [DBG] SaveChanges starting for 'TodoContext'.
+2024-09-30 18:25:04.113 +05:30 [DBG] DetectChanges starting for 'TodoContext'.
+2024-09-30 18:25:04.124 +05:30 [DBG] DetectChanges completed for 'TodoContext'.
+2024-09-30 18:25:04.200 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.202 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.205 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-30 18:25:04.206 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-30 18:25:04.207 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-09-30 18:25:04.209 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [todoschema].[TaskLabels]
+OUTPUT 1
+WHERE [TaskLabelIndex] = @p0;
+2024-09-30 18:25:04.280 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [todoschema].[TaskLabels]
+OUTPUT 1
+WHERE [TaskLabelIndex] = @p0;
+2024-09-30 18:25:04.285 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-09-30 18:25:04.286 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 3ms reading results.
+2024-09-30 18:25:04.288 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.289 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (1ms).
+2024-09-30 18:25:04.297 +05:30 [DBG] An entity of type 'TaskLabel' tracked by 'TodoContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:25:04.301 +05:30 [DBG] SaveChanges completed for 'TodoContext' with 1 entities written to the database.
+2024-09-30 18:25:04.303 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:25:04.305 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:25:04.305 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-30 18:25:04.306 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-30 18:25:04.307 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-09-30 18:25:04.310 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-30 18:25:04.312 +05:30 [INF] Executed action TodoServices.Controllers.LabelsController.Delete (TodoServices) in 293.805ms
+2024-09-30 18:25:04.314 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.LabelsController.Delete (TodoServices)'
+2024-09-30 18:25:04.315 +05:30 [DBG] 'TodoContext' disposed.
+2024-09-30 18:25:04.317 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-09-30 18:25:04.319 +05:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-09-30 18:25:04.321 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7225/api/Labels/unassignlabel?taskid=19&labelid=1 - 200 null text/plain; charset=utf-8 337.9127ms
+2024-09-30 18:27:15.178 +05:30 [DBG] Connection id "0HN719QQDM5IV" is closing.
+2024-09-30 18:27:15.181 +05:30 [DBG] Connection id "0HN719QQDM5IV" is closed. The last processed stream ID was 17.
+2024-09-30 18:27:15.185 +05:30 [DBG] Connection id "0HN719QQDM5IV" received FIN.
+2024-09-30 18:27:15.187 +05:30 [DBG] Connection id "0HN719QQDM5IV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-30 18:27:15.202 +05:30 [DBG] The connection queue processing loop for 0HN719QQDM5IV completed.
+2024-09-30 18:27:15.207 +05:30 [DBG] Connection id "0HN719QQDM5IV" stopped.
+2024-09-30 18:43:22.993 +05:30 [DBG] Initializing Razor view compiler with no compiled views.
+2024-09-30 18:43:23.066 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-30 18:43:23.124 +05:30 [DBG] Hosting starting
+2024-09-30 18:43:23.140 +05:30 [INF] User profile is available. Using 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-30 18:43:23.148 +05:30 [DBG] Reading data from file 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys\key-aec24cd3-e015-4ae5-a751-eb3eb2f44985.xml'.
+2024-09-30 18:43:23.157 +05:30 [DBG] Found key {aec24cd3-e015-4ae5-a751-eb3eb2f44985}.
+2024-09-30 18:43:23.166 +05:30 [DBG] Considering key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} with expiration date 2024-12-29 10:13:48Z as default key.
+2024-09-30 18:43:23.170 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-30 18:43:23.171 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-30 18:43:23.173 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-30 18:43:23.179 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-30 18:43:23.181 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-30 18:43:23.183 +05:30 [DBG] Using key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} as the default key.
+2024-09-30 18:43:23.185 +05:30 [DBG] Key ring with default key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} was loaded during application startup.
+2024-09-30 18:43:23.281 +05:30 [INF] Now listening on: https://localhost:7225
+2024-09-30 18:43:23.282 +05:30 [INF] Now listening on: http://localhost:5150
+2024-09-30 18:43:23.284 +05:30 [DBG] Loaded hosting startup assembly TodoServices
+2024-09-30 18:43:23.285 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-30 18:43:23.286 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-30 18:43:23.287 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-30 18:43:23.287 +05:30 [INF] Hosting environment: Development
+2024-09-30 18:43:23.288 +05:30 [INF] Content root path: C:\Users\P10\source\repos\TodoServices\TodoServices
+2024-09-30 18:43:23.289 +05:30 [DBG] Hosting started
+2024-09-30 18:43:23.456 +05:30 [DBG] Connection id "0HN71A6KQARLJ" received FIN.
+2024-09-30 18:43:23.471 +05:30 [DBG] Connection id "0HN71A6KQARLJ" accepted.
+2024-09-30 18:43:23.474 +05:30 [DBG] Connection id "0HN71A6KQARLJ" started.
+2024-09-30 18:43:23.476 +05:30 [DBG] Connection id "0HN71A6KQARLK" accepted.
+2024-09-30 18:43:23.478 +05:30 [DBG] Connection id "0HN71A6KQARLK" started.
+2024-09-30 18:43:23.489 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-30 18:43:23.515 +05:30 [DBG] Connection id "0HN71A6KQARLJ" stopped.
+2024-09-30 18:43:23.517 +05:30 [DBG] Connection id "0HN71A6KQARLJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-30 18:43:23.531 +05:30 [DBG] Connection 0HN71A6KQARLK established using the following protocol: "Tls12"
+2024-09-30 18:43:23.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/index.html - null null
+2024-09-30 18:43:23.636 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-30 18:43:23.660 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-30 18:43:23.675 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:43:23.772 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-30 18:43:23.774 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-30 18:43:23.797 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-30 18:43:23.799 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-30 18:43:23.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/index.html - 200 null text/html;charset=utf-8 233.2152ms
+2024-09-30 18:43:23.992 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_vs/browserLink - null null
+2024-09-30 18:43:23.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-30 18:43:24.002 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 7.4779ms
+2024-09-30 18:43:24.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.1322ms
+2024-09-30 18:43:24.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - null null
+2024-09-30 18:43:24.103 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-30 18:43:24.104 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:43:24.238 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.1835ms
+2024-09-30 18:43:34.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/index.html - null null
+2024-09-30 18:43:34.969 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-30 18:43:34.972 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:43:34.975 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-30 18:43:34.975 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-30 18:43:34.977 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-30 18:43:34.979 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-30 18:43:34.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/index.html - 200 null text/html;charset=utf-8 22.3801ms
+2024-09-30 18:43:34.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_vs/browserLink - null null
+2024-09-30 18:43:34.998 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-30 18:43:35.006 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 8.0137ms
+2024-09-30 18:43:35.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.984ms
+2024-09-30 18:43:35.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - null null
+2024-09-30 18:43:35.201 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-30 18:43:35.203 +05:30 [DBG] Request did not match any endpoints
+2024-09-30 18:43:35.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.6868ms
+2024-09-30 18:43:39.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/api/Labels/getlabellist - null null
+2024-09-30 18:43:39.914 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Labels/getlabellist'
+2024-09-30 18:43:39.923 +05:30 [DBG] Endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)' with route pattern 'api/Labels/getlabellist' is valid for the request path '/api/Labels/getlabellist'
+2024-09-30 18:43:39.929 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:43:39.934 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-30 18:43:39.939 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:43:39.957 +05:30 [INF] Route matched with {action = "Get", controller = "Labels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.LabelsController (TodoServices).
+2024-09-30 18:43:39.961 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-30 18:43:39.962 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-09-30 18:43:39.966 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-30 18:43:39.968 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-30 18:43:39.969 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-30 18:43:39.973 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:43:40.071 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-30 18:43:40.094 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.LabelsController (TodoServices)
+2024-09-30 18:43:40.632 +05:30 [DBG] The index {'TaskId'} was not created on entity type 'TaskLabel' as the properties are already covered by the index {'TaskId', 'LabelId'}.
+2024-09-30 18:43:40.951 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-30 18:43:40.984 +05:30 [DBG] Compiling query expression: 
+'DbSet<LabelList>()'
+2024-09-30 18:43:41.144 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<LabelList>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: LabelList.LabelId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: LabelList.LabelColor (string) MaxLength(20) ANSI, 1], [Property: LabelList.LabelName (string) Required MaxLength(20) ANSI, 2] }
+        SELECT l.LabelID, l.LabelColor, l.LabelName
+        FROM todoschema.LabelList AS l), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, LabelList>, 
+    TodoServices.Models.TodoContext, 
+    False, 
+    False, 
+    True
+)'
+2024-09-30 18:43:41.173 +05:30 [DBG] Creating DbConnection.
+2024-09-30 18:43:41.194 +05:30 [DBG] Created DbConnection. (19ms).
+2024-09-30 18:43:41.199 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-09-30 18:43:41.374 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-09-30 18:43:41.379 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-30 18:43:41.386 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-09-30 18:43:41.390 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2024-09-30 18:43:41.398 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelID], [l].[LabelColor], [l].[LabelName]
+FROM [todoschema].[LabelList] AS [l]
+2024-09-30 18:43:41.452 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelID], [l].[LabelColor], [l].[LabelName]
+FROM [todoschema].[LabelList] AS [l]
+2024-09-30 18:43:41.493 +05:30 [DBG] Context 'TodoContext' started tracking 'LabelList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:43:41.515 +05:30 [DBG] Context 'TodoContext' started tracking 'LabelList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:43:41.517 +05:30 [DBG] Context 'TodoContext' started tracking 'LabelList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:43:41.519 +05:30 [DBG] Context 'TodoContext' started tracking 'LabelList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-30 18:43:41.523 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-09-30 18:43:41.532 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 70ms reading results.
+2024-09-30 18:43:41.535 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-09-30 18:43:41.542 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (5ms).
+2024-09-30 18:43:41.545 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-09-30 18:43:41.552 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-09-30 18:43:41.553 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-30 18:43:41.554 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-30 18:43:41.556 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-09-30 18:43:41.558 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.LabelList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-30 18:43:41.636 +05:30 [INF] Executed action TodoServices.Controllers.LabelsController.Get (TodoServices) in 1661.4298ms
+2024-09-30 18:43:41.638 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.LabelsController.Get (TodoServices)'
+2024-09-30 18:43:41.641 +05:30 [DBG] 'TodoContext' disposed.
+2024-09-30 18:43:41.650 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-09-30 18:43:41.654 +05:30 [DBG] Disposed connection to database '' on server '' (4ms).
+2024-09-30 18:43:41.657 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/api/Labels/getlabellist - 200 292 application/json; charset=utf-8 1753.5705ms
+2024-09-30 18:45:53.409 +05:30 [DBG] Connection id "0HN71A6KQARLK" is closing.
+2024-09-30 18:45:53.412 +05:30 [DBG] Connection id "0HN71A6KQARLK" is closed. The last processed stream ID was 17.
+2024-09-30 18:45:53.416 +05:30 [DBG] Connection id "0HN71A6KQARLK" received FIN.
+2024-09-30 18:45:53.418 +05:30 [DBG] Connection id "0HN71A6KQARLK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-30 18:45:53.446 +05:30 [DBG] The connection queue processing loop for 0HN71A6KQARLK completed.
+2024-09-30 18:45:53.451 +05:30 [DBG] Connection id "0HN71A6KQARLK" stopped.

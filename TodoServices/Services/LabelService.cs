@@ -50,5 +50,11 @@ namespace TodoServices.Services
                 return msg;
             }
         }
+
+        public List<LabelList> GetLabelList()
+        {
+            var labellist = _todocontext.LabelLists.ToList();
+            return labellist;
+        }
     }
 }

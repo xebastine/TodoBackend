@@ -39,21 +39,6 @@ namespace TodoServices.Controllers
         [Route("unassignlabel")]
         public ActionResult Delete(int taskid, int labelid)
         {
-            /*using (TodoContext todocontext = new TodoContext())
-            {
-                var tasklabel = todocontext.TaskLabels.FirstOrDefault(row => row.LabelId == labelid && row.TaskId == taskid);
-                if (tasklabel!=null)
-                {
-                    todocontext.TaskLabels.Remove(tasklabel);
-                    todocontext.SaveChanges();
-                    return StatusCode(200);
-                }
-                else
-                {
-                    return StatusCode(404);
-                }
-
-            }*/
             try
             {
                 string msg = _labelservice.UnassignLabel(taskid, labelid);
@@ -74,10 +59,21 @@ namespace TodoServices.Controllers
         [Route("getlabellist")]
         public ActionResult Get()
         {
-            using (TodoContext todocontext = new TodoContext())
+            try
             {
-                var labellists = todocontext.LabelLists.ToList();
-                return StatusCode(200, labellists);
+                var labellist = _labelservice.GetLabelList();
+                if (labellist == null)
+                {
+                    return StatusCode(404, "No Labels found");
+                }
+                else
+                {
+                    return StatusCode(200, labellist);
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
             }
         }
 
