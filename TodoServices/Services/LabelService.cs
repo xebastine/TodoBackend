@@ -51,10 +51,16 @@ namespace TodoServices.Services
             }
         }
 
-        public List<LabelList> GetLabelList()
+        /*public List<LabelList> GetLabelList()
         {
             var labellist = _todocontext.LabelLists.ToList();
             return labellist;
+        }*/
+
+        public List<LabelList> GetLabelList()
+        {
+            var results = _todocontext.LabelLists.FromSqlRaw("EXEC todoschema.UP_GetLabelList").ToList();
+            return results;
         }
     }
 }

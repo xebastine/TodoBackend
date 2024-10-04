@@ -2,6 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using TodoServices.Interfaces;
 using TodoServices.Models;
+//using System.Data;
+using Microsoft.Data.SqlClient;
+//using System.Data.SqlClient;
+//using Microsoft.AspNetCore.Components;
+using System.Reflection.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoServices.Controllers
 {
@@ -83,12 +89,17 @@ namespace TodoServices.Controllers
         {
             using (TodoContext todocontext = new TodoContext())
             {
-                LabelList labellist = new LabelList();
-                labellist.LabelName = name;
-                labellist.LabelColor = color;
-                todocontext.Add(labellist);
-                todocontext.SaveChanges();
-                return StatusCode(200);
+                var p1 = new SqlParameter("@LabelName", name);
+                var p2 = new SqlParameter("@LabelColor", color);
+                try
+                {                    
+                    int results = todocontext.Database.ExecuteSqlRaw("EXEC todoschema.UP_CreateLabel @LabelName, @LabelColor", p1, p2);
+                    return StatusCode(200, "Label Created");
+                }
+                catch(Exception ex )
+                {
+                    return StatusCode(500, ex);
+                }
             }
         }
 
