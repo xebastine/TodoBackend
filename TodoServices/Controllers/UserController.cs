@@ -5,7 +5,6 @@ using TodoServices.Models;
 
 namespace TodoServices.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
