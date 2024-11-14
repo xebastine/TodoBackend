@@ -1,0 +1,439 @@
+2024-10-23 11:08:57.405 +05:30 [DBG] Initializing Razor view compiler with no compiled views.
+2024-10-23 11:08:57.468 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-23 11:08:57.577 +05:30 [DBG] Hosting starting
+2024-10-23 11:08:57.600 +05:30 [INF] User profile is available. Using 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-23 11:08:57.612 +05:30 [DBG] Reading data from file 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys\key-aec24cd3-e015-4ae5-a751-eb3eb2f44985.xml'.
+2024-10-23 11:08:57.653 +05:30 [DBG] Found key {aec24cd3-e015-4ae5-a751-eb3eb2f44985}.
+2024-10-23 11:08:57.662 +05:30 [DBG] Considering key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} with expiration date 2024-12-29 10:13:48Z as default key.
+2024-10-23 11:08:57.665 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-23 11:08:57.667 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-23 11:08:57.668 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-23 11:08:57.675 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-23 11:08:57.677 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-23 11:08:57.680 +05:30 [DBG] Using key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} as the default key.
+2024-10-23 11:08:57.681 +05:30 [DBG] Key ring with default key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} was loaded during application startup.
+2024-10-23 11:08:57.803 +05:30 [INF] Now listening on: https://localhost:7225
+2024-10-23 11:08:57.805 +05:30 [INF] Now listening on: http://localhost:5150
+2024-10-23 11:08:57.806 +05:30 [DBG] Loaded hosting startup assembly TodoServices
+2024-10-23 11:08:57.807 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-23 11:08:57.808 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-23 11:08:57.809 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-23 11:08:57.810 +05:30 [INF] Hosting environment: Development
+2024-10-23 11:08:57.811 +05:30 [INF] Content root path: C:\Users\P10\source\repos\TodoServices\TodoServices
+2024-10-23 11:08:57.812 +05:30 [DBG] Hosting started
+2024-10-23 11:08:57.826 +05:30 [DBG] Connection id "0HN7J4JUP1GMD" accepted.
+2024-10-23 11:08:57.828 +05:30 [DBG] Connection id "0HN7J4JUP1GMD" started.
+2024-10-23 11:08:57.864 +05:30 [DBG] Connection id "0HN7J4JUP1GMD" received FIN.
+2024-10-23 11:08:57.869 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-23 11:08:57.888 +05:30 [DBG] Connection id "0HN7J4JUP1GMD" stopped.
+2024-10-23 11:08:57.890 +05:30 [DBG] Connection id "0HN7J4JUP1GMD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:09:02.957 +05:30 [DBG] Connection id "0HN7J4JUP1GME" accepted.
+2024-10-23 11:09:02.994 +05:30 [DBG] Connection id "0HN7J4JUP1GME" started.
+2024-10-23 11:09:03.103 +05:30 [DBG] Connection 0HN7J4JUP1GME established using the following protocol: "Tls12"
+2024-10-23 11:09:03.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/index.html - null null
+2024-10-23 11:09:03.629 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-23 11:09:03.689 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-23 11:09:03.694 +05:30 [DBG] Request did not match any endpoints
+2024-10-23 11:09:03.968 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-23 11:09:03.973 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-23 11:09:04.026 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-23 11:09:04.032 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-23 11:09:04.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-23 11:09:04.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/index.html - 200 null text/html;charset=utf-8 846.3539ms
+2024-10-23 11:09:04.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 16.742ms
+2024-10-23 11:09:04.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_vs/browserLink - null null
+2024-10-23 11:09:04.642 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_vs/browserLink - 200 null text/javascript; charset=UTF-8 550.4244ms
+2024-10-23 11:09:04.857 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - null null
+2024-10-23 11:09:04.865 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-23 11:09:04.867 +05:30 [DBG] Request did not match any endpoints
+2024-10-23 11:09:05.207 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 350.4262ms
+2024-10-23 11:09:50.918 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7225/api/JwtHelper/token - null 0
+2024-10-23 11:09:50.929 +05:30 [DBG] 1 candidate(s) found for the request path '/api/JwtHelper/token'
+2024-10-23 11:09:50.939 +05:30 [DBG] Endpoint 'TodoServices.Controllers.JwtHelperController.GenerateToken (TodoServices)' with route pattern 'api/JwtHelper/token' is valid for the request path '/api/JwtHelper/token'
+2024-10-23 11:09:50.942 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.JwtHelperController.GenerateToken (TodoServices)'
+2024-10-23 11:09:50.946 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:09:51.074 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-23 11:09:51.078 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.JwtHelperController.GenerateToken (TodoServices)'
+2024-10-23 11:09:51.116 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "JwtHelper"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken() on controller TodoServices.Controllers.JwtHelperController (TodoServices).
+2024-10-23 11:09:51.121 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-23 11:09:51.123 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-10-23 11:09:51.127 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-23 11:09:51.129 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-23 11:09:51.131 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-23 11:09:51.137 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.JwtHelperController (TodoServices)
+2024-10-23 11:09:51.141 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.JwtHelperController (TodoServices)
+2024-10-23 11:09:51.180 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-10-23 11:09:51.183 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-23 11:09:51.184 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-23 11:09:51.185 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-23 11:09:51.188 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-10-23 11:09:51.191 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-10-23 11:09:51.199 +05:30 [INF] Executed action TodoServices.Controllers.JwtHelperController.GenerateToken (TodoServices) in 59.0688ms
+2024-10-23 11:09:51.201 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.JwtHelperController.GenerateToken (TodoServices)'
+2024-10-23 11:09:51.203 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7225/api/JwtHelper/token - 200 null text/plain; charset=utf-8 285.7961ms
+2024-10-23 11:11:45.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/api/User/getuserlist - null null
+2024-10-23 11:11:45.883 +05:30 [DBG] 1 candidate(s) found for the request path '/api/User/getuserlist'
+2024-10-23 11:11:45.885 +05:30 [DBG] Endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)' with route pattern 'api/User/getuserlist' is valid for the request path '/api/User/getuserlist'
+2024-10-23 11:11:45.887 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:11:45.928 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:11:45.931 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-23 11:11:45.934 +05:30 [DBG] Policy authentication schemes  did not succeed
+2024-10-23 11:11:45.940 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-23 11:11:45.950 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-10-23 11:11:45.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/api/User/getuserlist - 401 0 null 74.5287ms
+2024-10-23 11:12:34.664 +05:30 [DBG] Connection id "0HN7J4JUP1GMF" accepted.
+2024-10-23 11:12:34.667 +05:30 [DBG] Connection id "0HN7J4JUP1GMF" received FIN.
+2024-10-23 11:12:34.671 +05:30 [DBG] Connection id "0HN7J4JUP1GMG" accepted.
+2024-10-23 11:12:34.671 +05:30 [DBG] Connection id "0HN7J4JUP1GMF" started.
+2024-10-23 11:12:34.674 +05:30 [DBG] Connection id "0HN7J4JUP1GMG" started.
+2024-10-23 11:12:34.676 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-23 11:12:34.680 +05:30 [DBG] Connection id "0HN7J4JUP1GMF" stopped.
+2024-10-23 11:12:34.682 +05:30 [DBG] Connection id "0HN7J4JUP1GMF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:12:34.685 +05:30 [DBG] Connection 0HN7J4JUP1GMG established using the following protocol: "Tls12"
+2024-10-23 11:12:34.691 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - null null
+2024-10-23 11:12:34.694 +05:30 [DBG] 1 candidate(s) found for the request path '/api/User/getuserlist'
+2024-10-23 11:12:34.695 +05:30 [DBG] Endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)' with route pattern 'api/User/getuserlist' is valid for the request path '/api/User/getuserlist'
+2024-10-23 11:12:34.697 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:12:34.699 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:12:34.790 +05:30 [DBG] Successfully validated the token.
+2024-10-23 11:12:34.791 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-23 11:12:34.794 +05:30 [DBG] Authorization was successful.
+2024-10-23 11:12:34.796 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:12:34.820 +05:30 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.UserController (TodoServices).
+2024-10-23 11:12:34.822 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-23 11:12:34.823 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-10-23 11:12:34.825 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-23 11:12:34.826 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-23 11:12:34.828 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-23 11:12:34.831 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:12:35.258 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-23 11:12:35.336 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:12:36.243 +05:30 [DBG] The index {'TaskId'} was not created on entity type 'TaskLabel' as the properties are already covered by the index {'TaskId', 'LabelId'}.
+2024-10-23 11:12:36.845 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-23 11:12:36.998 +05:30 [DBG] Compiling query expression: 
+'DbSet<UserList>()'
+2024-10-23 11:12:37.425 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserList>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserList.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserList.UserName (string) MaxLength(20) ANSI, 1] }
+        SELECT u.UserID, u.UserName
+        FROM todoschema.UserList AS u), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserList>, 
+    TodoServices.Models.TodoContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-23 11:12:37.490 +05:30 [DBG] Creating DbConnection.
+2024-10-23 11:12:37.604 +05:30 [DBG] Created DbConnection. (141ms).
+2024-10-23 11:12:37.609 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-10-23 11:12:38.480 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-10-23 11:12:38.486 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-23 11:12:38.495 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2024-10-23 11:12:38.500 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (14ms).
+2024-10-23 11:12:38.514 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:12:39.249 +05:30 [INF] Executed DbCommand (735ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:12:39.389 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.423 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.426 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.429 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.438 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.442 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:12:39.459 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-10-23 11:12:39.471 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 210ms reading results.
+2024-10-23 11:12:39.476 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-10-23 11:12:39.483 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (7ms).
+2024-10-23 11:12:39.486 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-10-23 11:12:39.490 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-23 11:12:39.493 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-23 11:12:39.495 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-23 11:12:39.497 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-23 11:12:39.503 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.UserList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-23 11:12:39.821 +05:30 [INF] Executed action TodoServices.Controllers.UserController.Get (TodoServices) in 4990.7803ms
+2024-10-23 11:12:39.823 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:12:39.825 +05:30 [DBG] Connection id "0HN7J4JUP1GMG" completed keep alive response.
+2024-10-23 11:12:39.828 +05:30 [DBG] 'TodoContext' disposed.
+2024-10-23 11:12:39.865 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-10-23 11:12:39.876 +05:30 [DBG] Disposed connection to database '' on server '' (9ms).
+2024-10-23 11:12:39.883 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - 200 278 application/json; charset=utf-8 5192.4492ms
+2024-10-23 11:13:53.827 +05:30 [DBG] Initializing Razor view compiler with no compiled views.
+2024-10-23 11:13:54.145 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-23 11:13:54.433 +05:30 [DBG] Hosting starting
+2024-10-23 11:13:54.631 +05:30 [INF] User profile is available. Using 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-23 11:13:54.660 +05:30 [DBG] Reading data from file 'C:\Users\P10\AppData\Local\ASP.NET\DataProtection-Keys\key-aec24cd3-e015-4ae5-a751-eb3eb2f44985.xml'.
+2024-10-23 11:13:54.709 +05:30 [DBG] Found key {aec24cd3-e015-4ae5-a751-eb3eb2f44985}.
+2024-10-23 11:13:54.739 +05:30 [DBG] Considering key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} with expiration date 2024-12-29 10:13:48Z as default key.
+2024-10-23 11:13:54.747 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-23 11:13:54.750 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-23 11:13:54.755 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-23 11:13:54.766 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-23 11:13:54.769 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-23 11:13:54.772 +05:30 [DBG] Using key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} as the default key.
+2024-10-23 11:13:54.775 +05:30 [DBG] Key ring with default key {aec24cd3-e015-4ae5-a751-eb3eb2f44985} was loaded during application startup.
+2024-10-23 11:13:55.840 +05:30 [INF] Now listening on: https://localhost:7225
+2024-10-23 11:13:55.841 +05:30 [INF] Now listening on: http://localhost:5150
+2024-10-23 11:13:55.843 +05:30 [DBG] Loaded hosting startup assembly TodoServices
+2024-10-23 11:13:55.845 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-23 11:13:55.846 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-23 11:13:55.848 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-23 11:13:55.849 +05:30 [INF] Hosting environment: Development
+2024-10-23 11:13:55.851 +05:30 [INF] Content root path: C:\Users\P10\source\repos\TodoServices\TodoServices
+2024-10-23 11:13:55.853 +05:30 [DBG] Hosting started
+2024-10-23 11:13:56.074 +05:30 [DBG] Connection id "0HN7J4MNLBF4R" accepted.
+2024-10-23 11:13:56.074 +05:30 [DBG] Connection id "0HN7J4MNLBF4S" accepted.
+2024-10-23 11:13:56.082 +05:30 [DBG] Connection id "0HN7J4MNLBF4R" started.
+2024-10-23 11:13:56.079 +05:30 [DBG] Connection id "0HN7J4MNLBF4R" received FIN.
+2024-10-23 11:13:56.079 +05:30 [DBG] Connection id "0HN7J4MNLBF4S" received FIN.
+2024-10-23 11:13:56.082 +05:30 [DBG] Connection id "0HN7J4MNLBF4S" started.
+2024-10-23 11:13:56.219 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-23 11:13:56.219 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-23 11:13:56.581 +05:30 [DBG] Connection id "0HN7J4MNLBF4R" stopped.
+2024-10-23 11:13:56.581 +05:30 [DBG] Connection id "0HN7J4MNLBF4S" stopped.
+2024-10-23 11:13:56.586 +05:30 [DBG] Connection id "0HN7J4MNLBF4R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:13:56.586 +05:30 [DBG] Connection id "0HN7J4MNLBF4S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:14:01.089 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" accepted.
+2024-10-23 11:14:01.097 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" started.
+2024-10-23 11:14:01.500 +05:30 [DBG] Connection 0HN7J4MNLBF4T established using the following protocol: "Tls12"
+2024-10-23 11:14:02.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/index.html - null null
+2024-10-23 11:14:05.142 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-23 11:14:05.412 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-10-23 11:14:05.493 +05:30 [DBG] Request did not match any endpoints
+2024-10-23 11:14:05.926 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-23 11:14:05.929 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-23 11:14:05.996 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-23 11:14:06.010 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-23 11:14:06.019 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/index.html - 200 null text/html;charset=utf-8 3957.2382ms
+2024-10-23 11:14:06.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-23 11:14:06.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 12.1625ms
+2024-10-23 11:14:06.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/_vs/browserLink - null null
+2024-10-23 11:14:06.806 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.9662ms
+2024-10-23 11:14:07.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - null null
+2024-10-23 11:14:07.483 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-10-23 11:14:07.485 +05:30 [DBG] Request did not match any endpoints
+2024-10-23 11:14:07.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7225/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.6384ms
+2024-10-23 11:14:09.136 +05:30 [DBG] Connection id "0HN7J4MNLBF4U" accepted.
+2024-10-23 11:14:09.136 +05:30 [DBG] Connection id "0HN7J4MNLBF4U" received FIN.
+2024-10-23 11:14:09.138 +05:30 [DBG] Connection id "0HN7J4MNLBF4U" started.
+2024-10-23 11:14:09.138 +05:30 [DBG] Connection id "0HN7J4MNLBF4V" accepted.
+2024-10-23 11:14:09.143 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-10-23 11:14:09.144 +05:30 [DBG] Connection id "0HN7J4MNLBF4V" started.
+2024-10-23 11:14:09.149 +05:30 [DBG] Connection id "0HN7J4MNLBF4U" stopped.
+2024-10-23 11:14:09.153 +05:30 [DBG] Connection id "0HN7J4MNLBF4U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:14:09.159 +05:30 [DBG] Connection 0HN7J4MNLBF4V established using the following protocol: "Tls12"
+2024-10-23 11:14:09.168 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - null null
+2024-10-23 11:14:09.179 +05:30 [DBG] 1 candidate(s) found for the request path '/api/User/getuserlist'
+2024-10-23 11:14:09.187 +05:30 [DBG] Endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)' with route pattern 'api/User/getuserlist' is valid for the request path '/api/User/getuserlist'
+2024-10-23 11:14:09.190 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:09.197 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:14:46.701 +05:30 [DBG] Successfully validated the token.
+2024-10-23 11:14:46.709 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-23 11:14:46.720 +05:30 [DBG] Authorization was successful.
+2024-10-23 11:14:46.723 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:46.782 +05:30 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.UserController (TodoServices).
+2024-10-23 11:14:46.786 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-23 11:14:46.788 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-10-23 11:14:46.791 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-23 11:14:46.795 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-23 11:14:46.798 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-23 11:14:46.804 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:14:47.110 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-10-23 11:14:47.154 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:14:48.111 +05:30 [DBG] The index {'TaskId'} was not created on entity type 'TaskLabel' as the properties are already covered by the index {'TaskId', 'LabelId'}.
+2024-10-23 11:14:48.529 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-23 11:14:48.631 +05:30 [DBG] Compiling query expression: 
+'DbSet<UserList>()'
+2024-10-23 11:14:48.882 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserList>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserList.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserList.UserName (string) MaxLength(20) ANSI, 1] }
+        SELECT u.UserID, u.UserName
+        FROM todoschema.UserList AS u), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserList>, 
+    TodoServices.Models.TodoContext, 
+    False, 
+    False, 
+    True
+)'
+2024-10-23 11:14:48.914 +05:30 [DBG] Creating DbConnection.
+2024-10-23 11:14:48.946 +05:30 [DBG] Created DbConnection. (24ms).
+2024-10-23 11:14:48.950 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-10-23 11:14:49.451 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-10-23 11:14:49.458 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-23 11:14:49.475 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (9ms).
+2024-10-23 11:14:49.483 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (25ms).
+2024-10-23 11:14:49.499 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:14:49.591 +05:30 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:14:49.655 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.680 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.683 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.685 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.688 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.690 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:49.700 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-10-23 11:14:49.721 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 111ms reading results.
+2024-10-23 11:14:49.725 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-10-23 11:14:49.735 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (7ms).
+2024-10-23 11:14:49.744 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-10-23 11:14:49.766 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-23 11:14:49.767 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-23 11:14:49.768 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-23 11:14:49.771 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-23 11:14:49.774 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.UserList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-23 11:14:49.938 +05:30 [INF] Executed action TodoServices.Controllers.UserController.Get (TodoServices) in 3129.0073ms
+2024-10-23 11:14:49.941 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:49.952 +05:30 [DBG] Connection id "0HN7J4MNLBF4V" completed keep alive response.
+2024-10-23 11:14:49.960 +05:30 [DBG] 'TodoContext' disposed.
+2024-10-23 11:14:49.974 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-10-23 11:14:49.981 +05:30 [DBG] Disposed connection to database '' on server '' (8ms).
+2024-10-23 11:14:49.990 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - 200 278 application/json; charset=utf-8 40822.9022ms
+2024-10-23 11:14:59.523 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - null null
+2024-10-23 11:14:59.528 +05:30 [DBG] 1 candidate(s) found for the request path '/api/User/getuserlist'
+2024-10-23 11:14:59.529 +05:30 [DBG] Endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)' with route pattern 'api/User/getuserlist' is valid for the request path '/api/User/getuserlist'
+2024-10-23 11:14:59.531 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:59.532 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:14:59.537 +05:30 [DBG] Successfully validated the token.
+2024-10-23 11:14:59.538 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-23 11:14:59.540 +05:30 [DBG] Authorization was successful.
+2024-10-23 11:14:59.542 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:59.544 +05:30 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.UserController (TodoServices).
+2024-10-23 11:14:59.546 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-23 11:14:59.549 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-10-23 11:14:59.552 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-23 11:14:59.555 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-23 11:14:59.557 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-23 11:14:59.559 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:14:59.562 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:14:59.588 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-23 11:14:59.593 +05:30 [DBG] Creating DbConnection.
+2024-10-23 11:14:59.594 +05:30 [DBG] Created DbConnection. (1ms).
+2024-10-23 11:14:59.596 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-10-23 11:14:59.598 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-10-23 11:14:59.600 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-23 11:14:59.603 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-10-23 11:14:59.604 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-10-23 11:14:59.606 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:14:59.610 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:14:59.614 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.616 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.619 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.620 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.622 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.624 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:14:59.626 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-10-23 11:14:59.628 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 14ms reading results.
+2024-10-23 11:14:59.629 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-10-23 11:14:59.630 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (1ms).
+2024-10-23 11:14:59.632 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-10-23 11:14:59.635 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-23 11:14:59.636 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-23 11:14:59.637 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-23 11:14:59.638 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-23 11:14:59.639 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.UserList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-23 11:14:59.641 +05:30 [INF] Executed action TodoServices.Controllers.UserController.Get (TodoServices) in 82.2199ms
+2024-10-23 11:14:59.644 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:14:59.646 +05:30 [DBG] Connection id "0HN7J4MNLBF4V" completed keep alive response.
+2024-10-23 11:14:59.647 +05:30 [DBG] 'TodoContext' disposed.
+2024-10-23 11:14:59.651 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-10-23 11:14:59.654 +05:30 [DBG] Disposed connection to database '' on server '' (3ms).
+2024-10-23 11:14:59.657 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - 200 278 application/json; charset=utf-8 133.1155ms
+2024-10-23 11:15:13.095 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - null null
+2024-10-23 11:15:13.098 +05:30 [DBG] 1 candidate(s) found for the request path '/api/User/getuserlist'
+2024-10-23 11:15:13.101 +05:30 [DBG] Endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)' with route pattern 'api/User/getuserlist' is valid for the request path '/api/User/getuserlist'
+2024-10-23 11:15:13.105 +05:30 [DBG] Request matched endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:15:13.107 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-10-23 11:15:13.110 +05:30 [DBG] Successfully validated the token.
+2024-10-23 11:15:13.111 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-10-23 11:15:13.123 +05:30 [DBG] Authorization was successful.
+2024-10-23 11:15:13.124 +05:30 [INF] Executing endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:15:13.125 +05:30 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get() on controller TodoServices.Controllers.UserController (TodoServices).
+2024-10-23 11:15:13.127 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-10-23 11:15:13.129 +05:30 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-10-23 11:15:13.131 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-10-23 11:15:13.134 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-10-23 11:15:13.137 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-10-23 11:15:13.140 +05:30 [DBG] Executing controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:15:13.144 +05:30 [DBG] Executed controller factory for controller TodoServices.Controllers.UserController (TodoServices)
+2024-10-23 11:15:13.242 +05:30 [DBG] Entity Framework Core 8.0.8 initialized 'TodoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-10-23 11:15:13.247 +05:30 [DBG] Creating DbConnection.
+2024-10-23 11:15:13.248 +05:30 [DBG] Created DbConnection. (0ms).
+2024-10-23 11:15:13.250 +05:30 [DBG] Opening connection to database 'TODO' on server '.'.
+2024-10-23 11:15:13.252 +05:30 [DBG] Opened connection to database 'TODO' on server '.'.
+2024-10-23 11:15:13.253 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-10-23 11:15:13.254 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-10-23 11:15:13.255 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-10-23 11:15:13.256 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:15:13.259 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[UserName]
+FROM [todoschema].[UserList] AS [u]
+2024-10-23 11:15:13.264 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.266 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.268 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.270 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.271 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.273 +05:30 [DBG] Context 'TodoContext' started tracking 'UserList' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-10-23 11:15:13.276 +05:30 [DBG] Closing data reader to 'TODO' on server '.'.
+2024-10-23 11:15:13.277 +05:30 [DBG] A data reader for 'TODO' on server '.' is being disposed after spending 13ms reading results.
+2024-10-23 11:15:13.279 +05:30 [DBG] Closing connection to database 'TODO' on server '.'.
+2024-10-23 11:15:13.281 +05:30 [DBG] Closed connection to database 'TODO' on server '.' (1ms).
+2024-10-23 11:15:13.283 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-10-23 11:15:13.288 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-10-23 11:15:13.288 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-10-23 11:15:13.290 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-10-23 11:15:13.291 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-10-23 11:15:13.294 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoServices.Models.UserList, TodoServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-23 11:15:13.297 +05:30 [INF] Executed action TodoServices.Controllers.UserController.Get (TodoServices) in 157.0229ms
+2024-10-23 11:15:13.299 +05:30 [INF] Executed endpoint 'TodoServices.Controllers.UserController.Get (TodoServices)'
+2024-10-23 11:15:13.303 +05:30 [DBG] Connection id "0HN7J4MNLBF4V" completed keep alive response.
+2024-10-23 11:15:13.305 +05:30 [DBG] 'TodoContext' disposed.
+2024-10-23 11:15:13.310 +05:30 [DBG] Disposing connection to database 'TODO' on server '.'.
+2024-10-23 11:15:13.312 +05:30 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-10-23 11:15:13.317 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7225/api/User/getuserlist - 200 278 application/json; charset=utf-8 222.4371ms
+2024-10-23 11:43:45.570 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" received FIN.
+2024-10-23 11:43:45.595 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" is closed. The last processed stream ID was 7.
+2024-10-23 11:43:45.597 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-23 11:43:45.824 +05:30 [DBG] The connection queue processing loop for 0HN7J4MNLBF4T completed.
+2024-10-23 11:43:45.828 +05:30 [DBG] Connection id "0HN7J4MNLBF4T" stopped.

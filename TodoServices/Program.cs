@@ -1,11 +1,13 @@
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 using Serilog;
 using TodoServices.Interfaces;
 using TodoServices.Models;
 using TodoServices.Services;
-
+using Microsoft.IdentityModel.Tokens;
+using System.Text; //added for jwt (check if needed)
 namespace TodoServices
 {
     public class Program
@@ -26,6 +28,29 @@ namespace TodoServices
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            //JWT implementation (custom)
+            string tempkey = "notthatbigofakeybutstillfineforyourapplication";
+            string tempissuer = "https://localhost:7225/";
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = tempissuer,
+                    ValidAudience = tempissuer,
+                    //ValidateIssuer = true,
+                    //ValidateAudience = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tempkey)),
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true
+                };
+            });
+            builder.Services.AddAuthorization();
 
             // Configure Serilog
             Log.Logger = new LoggerConfiguration()
@@ -50,7 +75,7 @@ namespace TodoServices
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication(); //added just this line for jwt below line already there
             app.UseAuthorization();
 
 

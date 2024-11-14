@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TodoServices.Interfaces;
 using TodoServices.Models;
@@ -15,6 +16,7 @@ namespace TodoServices.Controllers
             _userservice = userservice;
         }
 
+        [Authorize]
         [HttpGet]
         [Route("getuserlist")]
         public ActionResult Get()
